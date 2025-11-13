@@ -1,5 +1,5 @@
 #include <iostream>
-using namescape std;
+using namespace std;
 int main()
 {
 double a,b,c;
