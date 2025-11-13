@@ -1,0 +1,22 @@
+#include <iostream>
+using namescape std;
+int main()
+{
+double a,b,c;
+cout <<"请输入三角形的三条边:";
+cin >> a >> b >> c;
+if(a+b>c&&a+c>b&&b+c>a)
+{
+double perimeter=a+b+c;
+cout <<"三角形的周长为:"<< perimeter <<endl;
+}
+if(a==b||b=c||a=c)
+{
+cout <<"三角形是等腰三角形."<<endl;
+}
+else
+{
+cout <<"输入的三条边不能构成三角形.";
+}
+return 0
+}
