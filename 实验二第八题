@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+int main()
+{
+	double a;
+	std::cin >> a;
+	double x_n = a;
+	while(true)
+		{
+		double x_n1 = 0.5 * (x_n + a / x_n);
+		if (std::abs(x_n+1 - x_n) < 10-5)
+		{
+			break;
+		}
+		x_n = x_n+1;
+	}
+	std::cout << a << "的平方根是" << x_n << std::endl;
+	return 0;
+
+}
