@@ -1,0 +1,29 @@
+#include <iostream>
+#include <cctype>
+int main()
+{
+	char c;
+	int digit_count = 0;
+	int letter_count = 0;
+	int other_count = 0;
+	std::cout << "请输入字符,以回车键结束输入：";
+	while (std::cin.get(c) && c != '\n')
+	{
+		if (std::isdigit(static_cast<unsigned char>(c)))
+		{
+			++digit_count;
+		}
+		else if (std::isalpha(static_cast<unsigned char>(c)))
+		{
+			++letter_count;
+		}
+		else
+		{
+			++other_count;
+		}
+	}
+	std::cout << "数字字符个数: " << digit_count << std::endl;
+	std::cout << "字母字符个数: " << letter_count << std::endl;
+	std::cout << "其他字符个数: " << other_count << std::endl;
+	return 0;
+}
