@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    char c;
+    cout << "请输入一个字符:";
+    cin >> c;
+    if (c >= 'a' && c <= 'z')
+    {
+        c = c - 32;
+    }
+    else
+    {
+        c = c + 1;
+    }
+    cout << "输出结果:" << c << endl;
+    return 0;
+}
